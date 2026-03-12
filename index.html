@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOIA Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="grid-overlay"></div>
+  <div class="scanline"></div>
+
+  <main class="shell">
+    <header class="shell-header">
+      <div>
+        <p class="eyebrow">SOIA</p>
+        <h1>Redline Chat</h1>
+        <p class="section-lead">Talk to SOIA in a lean cyberpunk chat console.</p>
+      </div>
+    </header>
+
+    <section class="console" id="console">
+      <div class="console-header">
+        <div>
+          <p class="eyebrow">Live console</p>
+          <h2>Chat</h2>
+          <p class="section-lead">Type your message and send.</p>
+        </div>
+      </div>
+
+      <div class="console-body">
+        <div class="log" id="chat-log">
+          <div class="msg sys">
+            <span class="label">system</span>
+            <p>Welcome to SOIA. Start chatting.</p>
+          </div>
+        </div>
+        <form class="composer" id="chat-form">
+          <input type="text" id="chat-input" placeholder="Type your prompt for SOIA..." autocomplete="off" required />
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.local.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
